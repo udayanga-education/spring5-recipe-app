@@ -22,11 +22,13 @@ class RecipeControllerTest {
     RecipeService recipeService;
 
     RecipeController controller;
+    MockMvc mockMvc;
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.initMocks(this);
         controller = new RecipeController(recipeService);
+
     }
 
     @Test
